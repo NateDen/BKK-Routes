@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122334302-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122334302-1');
+</script>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BTS Route Planner </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://www.bangkokbts.com/favicon.ico">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Fonts -->
+    <!-- Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/themefisher-fonts.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/custom.css" />
+
+</head>
+
+<body id="body">
+    <div id="preloader-wrapper">
+        <div class="pre-loader"></div>
+    </div>
+    <!--
+    Header start
+    ==================== -->
+    <div class="container">
+        <nav class="navbar navigation " id="top-nav">
+            <a class="navbar-brand logo" href="index.html">
+                <h1>BTS Route Planner</h1>
+            </a>
+            <button class="navbar-toggler hidden-lg-up float-lg-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <i class="tf-ion-android-menu"></i>
+            </button>
+            <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+                <ul class="nav navbar-nav menu float-lg-right" id="top-nav">
+                    <li class="active">
+                        <a href="index.html"></a>
+                    </li>
+                    <li class="">
+                        <a href="#about"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="how-to">
+                <h1>How to Use</h1>
+                <p>
+                    Click the starting location and ending location on the map. Press go to get the price (an estimate), and reset to start over. Press
+                    the switch at slider if you have further transportation, and enter your prices (if you don't know, 16 for buses and 20 for motorcycles is a good starting point).
+                    Press total to get the total price of the route.
+                </p>
+            </div>
+            <div class="col-md-9" id="map" styl>
+                <img src="MapCopy2.png" usemap="#bts" />
+
+                <!--For Testing Purposes
+
+
+                <img src="Map2.png" usemap="#bts" />
+
+
+                <map name="bts">
+
+                    <area alt="" id="W1" title="National Stadium (W1)" href="" shape="rect" coords="95,3,125,30" style="outline: 10px solid red;" target="_self" />
+                    <area alt="" id="C1" title="Siam (C1)" href="" shape="rect" coords="172,2,205,35" style="outline: 10px solid red;" target="_self" />
+                    <area alt="" id="S1" title="Ratchadamri (S1)" href="" shape="rect" coords="226,26,258,55" style="outline:10px solid red;" target="_self" />
+                    <area alt="" id="S2" title="Sala Daeng (S2)" href="" shape="rect" coords="221,93,250,120" style="outline:10px solid red;" target="_self" />
+                    <area alt="" id="S3" title="Chong Nonsi (S3)" href="" shape="rect" coords="212,147,241,174" style="outline:10px solid red;" target="_self" />
+                    <area alt="" id="S4" title="Suksa Witthaya (S4)" href="" shape="rect" coords="168,203,202,235" style="outline:10px solid red;" target="_self" />
+                    <area alt="" id="S5" title="Surasak (S5)" href="" shape="rect" coords="110,238,139,269" style="outline:10px solid red;" target="_self" />
+                    <area alt="" id="S6" title="Saphan Taksin (S6)" href="" shape="rect" coords="27,250,60,280" style="outline:10px solid red;" target="_self" />
+                </map>-->
+
+
+
+                <map name="bts">
+                    <area id="SU01" alt="Mo Chit" title="Mo Chit (N8)" href="http://www.image-maps.com/" shape="rect" coords="512,89,535,111" style="outline:none;" target="_self" />
+                    <area id="SU02" alt="Saphan Khwai" title="Saphan Khwai (N7)" href="http://www.image-maps.com/" shape="rect" coords="513,137,536,159" style="outline:none;" target="_self" />
+                    <area id="SU03" alt="Sena Ruam" title="Sena Ruam (N6)" href="http://www.image-maps.com/" shape="rect" coords="512,185,538,210" style="outline:none;" target="_self" />
+                    <area id="SU04" alt="Ari" title="Ari (N5)" href="http://www.image-maps.com/" shape="rect" coords="513,238,537,260" style="outline:none;" target="_self" />
+                    <area id="SU05" alt="Sanam Pao" title="Sanam Pao (N4)" href="http://www.image-maps.com/" shape="rect" coords="513,286,536,309" style="outline:none;" target="_self" />
+                    <area id="SU06" alt="Victory Monument" title="Victory Monument (N3)" href="http://www.image-maps.com/" shape="rect" coords="513,337,537,360" style="outline:none;" target="_self" />
+                    <area id="SU07" alt="Phaya Thai" title="Phaya Thai (N2)" href="http://www.image-maps.com/" shape="rect" coords="513,380,534,406" style="outline:none;" target="_self" />
+                    <area id="SU08" alt="Ratchathewi" title="Ratchathewi (N1)" href="http://www.image-maps.com/" shape="rect" coords="513,434,538,455" style="outline:none;" target="_self" />
+                    <area id="SU09" alt="Siam" title="Siam (C1)" href="http://www.image-maps.com/" shape="rect" coords="545,500,573,549" style="outline:none;" target="_self" />
+                    <area id="SU10" alt="Chit Lom" title="Chit Lom (E1)" href="http://www.image-maps.com/" shape="rect" coords="597,500,619,525" style="outline:none;" target="_self" />
+                    <area id="SU11" alt="Phloen Chit" title="Phloen Chit (E2)" href="http://www.image-maps.com/" shape="rect" coords="656,501,679,527" style="outline:none;" target="_self" />
+                    <area id="SU12" alt="Nana" title="Nana (E3)" href="http://www.image-maps.com/" shape="rect" coords="706,513,729,539" style="outline:none;" target="_self" />
+                    <area id="SU13" alt="Asok" title="Asok (E4)" href="http://www.image-maps.com/" shape="rect" coords="740,533,761,555" style="outline:none;" target="_self" />
+                    <area id="SU14" alt="Phrom Phong" title="Phrom Phong (E5)" href="http://www.image-maps.com/" shape="rect" coords="777,588,799,611" style="outline:none;" target="_self" />
+                    <area id="SU15" alt="Thong Lo" title="Thong Lo (E6)" href="http://www.image-maps.com/" shape="rect" coords="803,644,825,667" style="outline:none;" target="_self" />
+                    <area id="SU16" alt="Ekkamai" title="Ekkamai (E7)" href="http://www.image-maps.com/" shape="rect" coords="826,703,848,726" style="outline:none;" target="_self" />
+                    <area id="SU17" alt="Phra Khanong" title="Phra Khanong (E8)" href="http://www.image-maps.com/" shape="rect" coords="850,762,874,784" style="outline:none;" target="_self" />
+                    <area id="SU18" alt="On Nut" title="On Nut (E9)" href="http://www.image-maps.com/" shape="rect" coords="876,820,900,842" style="outline:none;" target="_self" />
+                    <area id="SU19" alt="Bang Chak" title="Bang Chak (E10)" href="http://www.image-maps.com/" shape="rect" coords="899,878,923,903" style="outline:none;" target="_self" />
+                    <area id="SU20" alt="Punnawithi" title="Punnawithi (E11)" href="http://www.image-maps.com/" shape="rect" coords="926,936,950,961" style="outline:none;" target="_self" />
+                    <area id="SU21" alt="Udom Suk" title="Udom Suk (E12)" href="http://www.image-maps.com/" shape="rect" coords="948,992,972,1017" style="outline:none;" target="_self" />
+                    <area id="SU22" alt="Bang Na" title="Bang Na (E13)" href="http://www.image-maps.com/" shape="rect" coords="973,1052,997,1077" style="outline:none;" target="_self" />
+                    <area id="SU23" alt="Bearing" title="Bearing (E14)" href="http://www.image-maps.com/" shape="rect" coords="998,1110,1022,1135" style="outline:none;" target="_self" />
+                    <area id="SI01" alt="National Stadium" title="National Stadium (W1)" href="http://www.image-maps.com/" shape="rect" coords="488,522,512,547" style="outline:none;" target="_self" />
+                    <area id="SI02" alt="Ratchadamri" title="Ratchadamri (S1)" href="http://www.image-maps.com/" shape="rect" coords="587,540,611,565" style="outline:none;" target="_self" />
+                    <area id="SI03" alt="Sala Daeng" title="Sala Daeng (S2)" href="http://www.image-maps.com/" shape="rect" coords="583,591,604,612" style="outline:none;" target="_self" />
+                    <area id="SI04" alt="Chong Nonsi" title="Chong Nonsi (S3)" href="http://www.image-maps.com/" shape="rect" coords="576,629,598,652" style="outline:none;" target="_self" />
+                    <area id="SI05" alt="Surasak" title="Surasak (S5)" href="http://www.image-maps.com/" shape="rect" coords="502,699,524,722" style="outline:none;" target="_self" />
+                    <area id="SI06" alt="Saphan Taksin" title="Saphan Taksin (S6)" href="http://www.image-maps.com/" shape="rect" coords="440,710,462,733" style="outline:none;" target="_self" />
+                    <area id="SI07" alt="Krung Thon Buri" title="Krung Thon Buri (S7)" href="http://www.image-maps.com/" shape="rect" coords="371,708,394,732" style="outline:none;" target="_self" />
+                    <area id="SI08" alt="Wongwian Yai" title="Wongwian Yai (S8)" href="http://www.image-maps.com/" shape="rect" coords="317,709,340,733" style="outline:none;" target="_self" />
+                    <area id="SI09" alt="Pho Nimit" title="Pho Nimit (S9)" href="http://www.image-maps.com/" shape="rect" coords="250,708,273,732" style="outline:none;" target="_self" />
+                    <area id="SI10" alt="Talat Phlu" title="Talat Phlu (S10)" href="http://www.image-maps.com/" shape="rect" coords="180,709,203,733" style="outline:none;" target="_self" />
+                    <area id="SI11" alt="Wutthakat" title="Wutthakat (S11)" href="http://www.image-maps.com/" shape="rect" coords="98,707,121,731" style="outline:none;" target="_self" />
+                    <area id="SI12" alt="Bang Wa" title="Bang Wa (S12)" href="http://www.image-maps.com/" shape="rect" coords="32,644,55,668" style="outline:none;" target="_self" />
+                </map>
+
+
+
+
+            </div>
+            <div class="col-md-3">
+                <div class="block">
+
+                    <div id="click-box-one">
+                        <p>Origin</p>
+                        <form id="BTSTextBox">
+                            <input type="text" id="Start" />
+                            <input type="hidden" id="h-Start" />
+                            <br />
+                            <br />
+                            <p>Destination</p>
+                            <input type="text" id="End" />
+                            <input type="hidden" id="h-End" />
+                            <br />
+                            <br />
+
+                            <p>Price</p>
+                            <input type="text" id="priceOutput" />
+                        </form>
+                    </div>
+                    <a class="btn btn-main" id="btn-go" href="#about" role="button" type="button" style="text-shadow: none; box-shadow: none;">go</a>
+                    <a class="btn btn-main" onclick="clearBTSTextBox()" href="#about" role="button" type="button" style="text-shadow: none; box-shadow: none;">reset</a>
+                    <br />
+                    <br />
+
+
+                    <h2>มีรถต่อไหม</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="moreOptions" onclick="showMoreOptions()" />
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="container">
+                        <form id="otherTransportation" style="display: none;">
+                            <p>Bus</p>
+                            <input type="text" id="Bus" />
+                            <br />
+                            <br />
+                            <p>Motorcycle</p>
+                            <input type="text" id="Motorcycle" />
+                            <br />
+                            <br />
+                            <p>Total</p>
+                            <input type="text" id="Total" />
+                            <a class="btn btn-main" onclick="sumPrices()" href="#about" role="button" type="button" style="text-shadow: none; box-shadow: none;">total</a>
+
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div><!-- .row close -->
+    </div><!-- .container close -->
+    <!--<div class="container-fluid" style="position: absolute; bottom: 1px; justify-content: center; text-align: center;">
+        <p>Copyright</p>
+    </div>-->
+    <!--<div class="row justify-content-center align-items-center" style="bottom: 10px; position: absolute; margin: 0px; padding: 0px;">
+        <div class="col-md-12">
+            <div class="block">
+                <ul class="menu">
+                    <li class=" active">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="">
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li class="">
+                        <a href="#service">SERVICES</a>
+                    </li>
+                    <li class="">
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+                <p class="copyright-text">Copyright &copy; <a href="">Themefisher</a> | All right reserved.</p>
+            </div>
+        </div>
+    </div>-->
+
+
+
+    <script src="js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+</html>
